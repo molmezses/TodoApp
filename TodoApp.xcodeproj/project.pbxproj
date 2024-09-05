@@ -50,6 +50,8 @@
 		8E55AE5E2C8881D000360DA4 /* LoginViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E55AE5D2C8881D000360DA4 /* LoginViewViewModel.swift */; };
 		8E55AE602C88824600360DA4 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E55AE5F2C88824600360DA4 /* User.swift */; };
 		8E55AE622C88825800360DA4 /* TodoListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E55AE612C88825800360DA4 /* TodoListItem.swift */; };
+		8EF8FF7E2C8A2C5C008A5804 /* SecureFieldWithButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EF8FF7D2C8A2C5C008A5804 /* SecureFieldWithButton.swift */; };
+		8EF8FF802C8A2C83008A5804 /* TextFieldModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EF8FF7F2C8A2C83008A5804 /* TextFieldModifier.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -74,6 +76,8 @@
 		8E55AE5D2C8881D000360DA4 /* LoginViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewViewModel.swift; sourceTree = "<group>"; };
 		8E55AE5F2C88824600360DA4 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		8E55AE612C88825800360DA4 /* TodoListItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoListItem.swift; sourceTree = "<group>"; };
+		8EF8FF7D2C8A2C5C008A5804 /* SecureFieldWithButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecureFieldWithButton.swift; sourceTree = "<group>"; };
+		8EF8FF7F2C8A2C83008A5804 /* TextFieldModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldModifier.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,6 +133,7 @@
 		8E55ADFF2C887D9A00360DA4 /* TodoApp */ = {
 			isa = PBXGroup;
 			children = (
+				8EF8FF7C2C8A2C35008A5804 /* Components */,
 				8E55AE502C88813400360DA4 /* Models */,
 				8E55AE4F2C88810C00360DA4 /* ViewModels */,
 				8E55AE422C88807100360DA4 /* Views */,
@@ -191,6 +196,15 @@
 				8E55AE612C88825800360DA4 /* TodoListItem.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		8EF8FF7C2C8A2C35008A5804 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				8EF8FF7D2C8A2C5C008A5804 /* SecureFieldWithButton.swift */,
+				8EF8FF7F2C8A2C83008A5804 /* TextFieldModifier.swift */,
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -301,8 +315,10 @@
 				8E55AE5A2C8881AC00360DA4 /* NewItemViewViewModel.swift in Sources */,
 				8E55AE4E2C8880F900360DA4 /* ProfileView.swift in Sources */,
 				8E55AE4A2C8880D200360DA4 /* LoginView.swift in Sources */,
+				8EF8FF802C8A2C83008A5804 /* TextFieldModifier.swift in Sources */,
 				8E55AE582C88819800360DA4 /* ProfileViewViewModel.swift in Sources */,
 				8E55AE442C8880A300360DA4 /* TodoListItemView.swift in Sources */,
+				8EF8FF7E2C8A2C5C008A5804 /* SecureFieldWithButton.swift in Sources */,
 				8E55AE4C2C8880E800360DA4 /* NewItemView.swift in Sources */,
 				8E55AE5E2C8881D000360DA4 /* LoginViewViewModel.swift in Sources */,
 				8E55AE482C8880C900360DA4 /* RegisterView.swift in Sources */,

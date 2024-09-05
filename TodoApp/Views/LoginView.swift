@@ -55,21 +55,11 @@ struct LoginFormsView: View {
     var body: some View {
         VStack{
             TextField("E-mail adress :", text: $email)
-                .textInputAutocapitalization(.never)
-                .font(.subheadline)
-                .padding(16)
-                .background(Color(.systemGray5))
-                .clipShape(RoundedRectangle(cornerRadius: 10))
-                .padding(.horizontal , 24)
-                .padding(.vertical , 8)
+                .modifier(TextFieldModifier())
+
             
-            SecureField("Password :", text: $password)
-                .textInputAutocapitalization(.never)
-                .font(.subheadline)
-                .padding(16)
-                .background(Color(.systemGray5))
-                .clipShape(RoundedRectangle(cornerRadius: 10))
-                .padding(.horizontal , 24)
+            SecureFieldWithButton(text: $password , title: "Password")
+                
             
             Button("Forget password ? ") {
                 
