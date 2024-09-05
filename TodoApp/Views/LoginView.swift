@@ -17,6 +17,7 @@ struct LoginView: View {
                 Spacer()
                 //HEADER
                 HeaderView()
+                
                 //FORM
                 VStack{
                     LoginFormsView()
@@ -49,16 +50,23 @@ struct HeaderView: View {
 
 struct LoginFormsView: View {
     
-    @State var email: String = ""
-    @State var password: String = ""
+//    @State var email: String = ""
+//    @State var password: String = ""
+    
+    @StateObject var viewModel = LoginViewViewModel()
     
     var body: some View {
         VStack{
-            TextField("E-mail adress :", text: $email)
+            if !viewModel.errorMessage.isEmpty{
+                Text(viewModel.errorMessage)
+                    .foregroundStyle(.red)
+                    .padding()
+            }
+            TextField("E-mail adress :", text: $viewModel.email)
                 .modifier(TextFieldModifier())
 
             
-            SecureFieldWithButton(text: $password , title: "Password")
+            SecureFieldWithButton(text: $viewModel.password , title: "Password")
                 
             
             Button("Forget password ? ") {
@@ -72,20 +80,9 @@ struct LoginFormsView: View {
             .padding(.vertical , 8)
             .foregroundStyle(.black)
             
-            
-            Button(action: {}, label: {
-                Text("Sign in")
-                    .font(.headline)
-                    .fontWeight(.semibold)
-                    .frame(maxWidth: .infinity)
-            })
-            .background(
-                RoundedRectangle(cornerRadius: 12)
-                    .stroke(lineWidth: 2)
-                    .frame(height: 48)
-                    .padding(.horizontal , 4)
-            )
-            .padding()
+            BigStrokeButton(title: "Sign in") {
+                viewModel.login()
+            }
             
         }
     }
