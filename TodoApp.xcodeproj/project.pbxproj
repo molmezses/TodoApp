@@ -52,6 +52,7 @@
 		8E55AE622C88825800360DA4 /* TodoListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E55AE612C88825800360DA4 /* TodoListItem.swift */; };
 		8EF8FF7E2C8A2C5C008A5804 /* SecureFieldWithButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EF8FF7D2C8A2C5C008A5804 /* SecureFieldWithButton.swift */; };
 		8EF8FF802C8A2C83008A5804 /* TextFieldModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EF8FF7F2C8A2C83008A5804 /* TextFieldModifier.swift */; };
+		8EF8FF822C8A36D4008A5804 /* BigStrokeButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EF8FF812C8A36D4008A5804 /* BigStrokeButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -78,6 +79,7 @@
 		8E55AE612C88825800360DA4 /* TodoListItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoListItem.swift; sourceTree = "<group>"; };
 		8EF8FF7D2C8A2C5C008A5804 /* SecureFieldWithButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecureFieldWithButton.swift; sourceTree = "<group>"; };
 		8EF8FF7F2C8A2C83008A5804 /* TextFieldModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldModifier.swift; sourceTree = "<group>"; };
+		8EF8FF812C8A36D4008A5804 /* BigStrokeButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BigStrokeButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -203,6 +205,7 @@
 			children = (
 				8EF8FF7D2C8A2C5C008A5804 /* SecureFieldWithButton.swift */,
 				8EF8FF7F2C8A2C83008A5804 /* TextFieldModifier.swift */,
+				8EF8FF812C8A36D4008A5804 /* BigStrokeButton.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -316,6 +319,7 @@
 				8E55AE4E2C8880F900360DA4 /* ProfileView.swift in Sources */,
 				8E55AE4A2C8880D200360DA4 /* LoginView.swift in Sources */,
 				8EF8FF802C8A2C83008A5804 /* TextFieldModifier.swift in Sources */,
+				8EF8FF822C8A36D4008A5804 /* BigStrokeButton.swift in Sources */,
 				8E55AE582C88819800360DA4 /* ProfileViewViewModel.swift in Sources */,
 				8E55AE442C8880A300360DA4 /* TodoListItemView.swift in Sources */,
 				8EF8FF7E2C8A2C5C008A5804 /* SecureFieldWithButton.swift in Sources */,
