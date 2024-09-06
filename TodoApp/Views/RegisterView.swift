@@ -9,9 +9,11 @@ import SwiftUI
 
 struct RegisterView: View {
     
-    @State var name: String = ""
-    @State var email: String = ""
-    @State var password: String = ""
+//    @State var name: String = ""
+//    @State var email: String = ""
+//    @State var password: String = ""
+    
+    @StateObject var viewModel = RegisterViewViewModel()
     
     var body: some View {
         ScrollView {
@@ -23,15 +25,21 @@ struct RegisterView: View {
                     .font(.title)
                     .bold()
                     .foregroundStyle(Color("prup"))
-                TextField("Enter a name :", text: $name)
+                if !viewModel.errorMessage.isEmpty{
+                    Text(viewModel.errorMessage)
+                        .foregroundStyle(.red)
+                        .padding()
+                }
+                
+                TextField("Enter a name :", text: $viewModel.name)
                     .modifier(TextFieldModifier())
-                TextField("Enter a E-mail adress :", text: $email)
+                TextField("Enter a E-mail adress :", text: $viewModel.email)
                     .modifier(TextFieldModifier())
-                SecureFieldWithButton(text: $password, title: "Password")
+                SecureFieldWithButton(text: $viewModel.password, title: "Password")
                     .padding(.bottom)
                 
                 BigStrokeButton(title: "Sign Up") {
-                    
+                    viewModel.register()
                 }
                 Spacer()
                 
