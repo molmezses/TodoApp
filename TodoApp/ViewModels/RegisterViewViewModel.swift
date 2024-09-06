@@ -6,6 +6,8 @@
 //
 
 import Foundation
+import FirebaseAuth
+import FirebaseFirestore
 
 class RegisterViewViewModel: ObservableObject{
     @Published var name: String = ""
@@ -17,6 +19,20 @@ class RegisterViewViewModel: ObservableObject{
     
     func register(){
         guard validate() else {return}
+        
+        Auth.auth().createUser(withEmail: email, password: password) { [weak self] result, error in
+            guard let userId = result?.user.uid else {return}
+            
+            //İNSERT METODU ÇAGIRALACAK
+            self?.insertUserRecord(id: userId)
+        }
+    }
+    
+    private func insertUserRecord(id: String){
+        let newUser = User(id: id, name: name, email: email, joined: Date().timeIntervalSince1970)
+        let db = Firestore.firestore()
+        
+        db.collection("Users").document(id).setData(newUser.asDictonary())
     }
     
     func validate() -> Bool{

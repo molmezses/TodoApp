@@ -53,6 +53,7 @@
 		8EF8FF7E2C8A2C5C008A5804 /* SecureFieldWithButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EF8FF7D2C8A2C5C008A5804 /* SecureFieldWithButton.swift */; };
 		8EF8FF802C8A2C83008A5804 /* TextFieldModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EF8FF7F2C8A2C83008A5804 /* TextFieldModifier.swift */; };
 		8EF8FF822C8A36D4008A5804 /* BigStrokeButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EF8FF812C8A36D4008A5804 /* BigStrokeButton.swift */; };
+		8EF98E832C8B435100CD2DB1 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EF98E822C8B435100CD2DB1 /* Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -80,6 +81,7 @@
 		8EF8FF7D2C8A2C5C008A5804 /* SecureFieldWithButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecureFieldWithButton.swift; sourceTree = "<group>"; };
 		8EF8FF7F2C8A2C83008A5804 /* TextFieldModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldModifier.swift; sourceTree = "<group>"; };
 		8EF8FF812C8A36D4008A5804 /* BigStrokeButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BigStrokeButton.swift; sourceTree = "<group>"; };
+		8EF98E822C8B435100CD2DB1 /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -159,6 +161,7 @@
 				8E55AE002C887D9A00360DA4 /* TodoAppApp.swift */,
 				8E55AE042C887D9C00360DA4 /* Assets.xcassets */,
 				8E55AE0E2C887E5700360DA4 /* GoogleService-Info.plist */,
+				8EF98E822C8B435100CD2DB1 /* Extension.swift */,
 			);
 			path = Other;
 			sourceTree = "<group>";
@@ -318,6 +321,7 @@
 				8E55AE5A2C8881AC00360DA4 /* NewItemViewViewModel.swift in Sources */,
 				8E55AE4E2C8880F900360DA4 /* ProfileView.swift in Sources */,
 				8E55AE4A2C8880D200360DA4 /* LoginView.swift in Sources */,
+				8EF98E832C8B435100CD2DB1 /* Extension.swift in Sources */,
 				8EF8FF802C8A2C83008A5804 /* TextFieldModifier.swift in Sources */,
 				8EF8FF822C8A36D4008A5804 /* BigStrokeButton.swift in Sources */,
 				8E55AE582C88819800360DA4 /* ProfileViewViewModel.swift in Sources */,
