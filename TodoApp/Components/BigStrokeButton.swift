@@ -16,13 +16,14 @@ struct BigStrokeButton: View {
         
         Button(action:action , label: {
             Text(title)
+                .foregroundStyle(.white)
                 .font(.headline)
                 .fontWeight(.semibold)
                 .frame(maxWidth: .infinity)
         })
         .background(
             RoundedRectangle(cornerRadius: 12)
-                .stroke(lineWidth: 2)
+                .foregroundStyle(Color("prup"))
                 .frame(height: 48)
                 .padding(.horizontal , 4)
         )

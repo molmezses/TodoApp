@@ -17,16 +17,16 @@ struct LoginView: View {
                 Spacer()
                 //HEADER
                 HeaderView()
-                
                 //FORM
-                VStack{
-                    LoginFormsView()
-                    LoginGoogleView()
-                }
+                LoginFormsView()
                 //FOOTER
+                Spacer()
+                Spacer()
+                Spacer()
                 Spacer()
                 Divider()
                 FooterView()
+                
                 
             }
         }
@@ -42,7 +42,7 @@ struct HeaderView: View {
         ZStack{
             Image("TodoImage")
                 .resizable()
-                .frame(width: 240 , height: 100)
+                .frame(width: 320 , height: 300)
         }
         .padding()
     }
@@ -57,6 +57,12 @@ struct LoginFormsView: View {
     
     var body: some View {
         VStack{
+            Text("Login")
+                .frame(maxWidth: .infinity , alignment: .leading)
+                .padding(.leading , 30)
+                .font(.title)
+                .bold()
+                .foregroundStyle(Color("prup"))
             if !viewModel.errorMessage.isEmpty{
                 Text(viewModel.errorMessage)
                     .foregroundStyle(.red)
@@ -72,7 +78,7 @@ struct LoginFormsView: View {
             Button("Forget password ? ") {
                 
             }
-            .foregroundStyle(Color("ACText"))
+            .foregroundStyle(Color("prup"))
             .font(.footnote)
             .bold()
             .frame(maxWidth: .infinity , alignment: .trailing)
@@ -88,32 +94,7 @@ struct LoginFormsView: View {
     }
 }
 
-struct LoginGoogleView: View {
-    var body: some View {
-        VStack{
-            HStack{
-                Rectangle()
-                    .frame(height: 1)
-                Text("Or")
-                Rectangle()
-                    .frame(height: 1)
-            }
-            .foregroundStyle(.gray)
-            .padding()
-            .padding()
-            
-            HStack{
-                Image("Google")
-                    .resizable()
-                    .frame(width: 60 , height: 60)
-                Button(action: {}, label: {
-                    Text("Sign in with your google account")
-                })
-            }
-            
-        }
-    }
-}
+
 
 struct FooterView: View {
     var body: some View {
@@ -123,7 +104,7 @@ struct FooterView: View {
                 RegisterView()
             }
             .bold()
-            .foregroundStyle(Color("ACText"))
+            .foregroundStyle(Color("prup"))
         }
     }
 }

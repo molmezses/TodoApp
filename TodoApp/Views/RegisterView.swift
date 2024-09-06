@@ -14,22 +14,30 @@ struct RegisterView: View {
     @State var password: String = ""
     
     var body: some View {
-        HeaderView()
-            .padding(.bottom , 60)
-        VStack{
-            TextField("Enter a name :", text: $name)
-                .modifier(TextFieldModifier())
-            TextField("Enter a E-mail adress :", text: $email)
-                .modifier(TextFieldModifier())
-            SecureFieldWithButton(text: $password, title: "Password")
-                .padding(.bottom)
-            
-            BigStrokeButton(title: "Sign Up") {
+        ScrollView {
+            HeaderView()
+            VStack{
+                Text("Register")
+                    .frame(maxWidth: .infinity , alignment: .leading)
+                    .padding(.leading , 30)
+                    .font(.title)
+                    .bold()
+                    .foregroundStyle(Color("prup"))
+                TextField("Enter a name :", text: $name)
+                    .modifier(TextFieldModifier())
+                TextField("Enter a E-mail adress :", text: $email)
+                    .modifier(TextFieldModifier())
+                SecureFieldWithButton(text: $password, title: "Password")
+                    .padding(.bottom)
+                
+                BigStrokeButton(title: "Sign Up") {
+                    
+                }
+                Spacer()
                 
             }
-            
+            .padding(.bottom , 30)
         }
-        .padding(.bottom , 100)
     }
 }
 
