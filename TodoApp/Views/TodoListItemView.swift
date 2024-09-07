@@ -27,6 +27,7 @@ struct TodoListItemView: View {
                 viewModel.toggleIsDone(item: item)
             }, label: {
                 Image(systemName: item.isDone ? "checkmark.circle.fill" : "checkmark.circle")
+                    .foregroundStyle(Color("prup"))
                     .imageScale(.large)
             })
         }
