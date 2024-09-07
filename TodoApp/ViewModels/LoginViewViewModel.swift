@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import FirebaseAuth
 
 
 class LoginViewViewModel: ObservableObject {
@@ -18,6 +19,8 @@ class LoginViewViewModel: ObservableObject {
     func login(){
         
         guard validate() else {return}
+        
+        Auth.auth().signIn(withEmail: email, password: password)
         
         
     }
