@@ -7,6 +7,7 @@
 
 import Foundation
 
+
 class LoginViewViewModel: ObservableObject {
     @Published var email: String = ""
     @Published var password: String = ""
@@ -17,6 +18,7 @@ class LoginViewViewModel: ObservableObject {
     func login(){
         
         guard validate() else {return}
+        
         
     }
     
